@@ -1,0 +1,9 @@
+.coverage
+.tox
+.venv
+venv
+pip-wheel-metadata/
+build
+dist
+coverage.xml
+src/requests_safe.egg-info
