@@ -1,0 +1,13 @@
+[run]
+parallel = true
+source =
+    requests_safe
+
+[paths]
+source =
+    src/requests_safe
+    */site-packages/requests_safe
+
+[report]
+show_missing = true
+precision = 2
