@@ -17,12 +17,12 @@ These are the IPv4 networks that are blocked from being conneted to:
          Name                  Network (CIDR)
 -------------------------      ------------------
 RFC1918 (private network)      10.0.0.0/8
-                               172.16.0.0/12
-                               192.168.0.0/16
+RFC1918                        172.16.0.0/12
+RFC1918                        192.168.0.0/16
 Link-Local                     169.254.0.0/16
 CG-NAT address space           100.64.0.0/10
 Localhost/loopback             127.0.0.0/8
-Any IP in Linux                0.0.0.0/32
+Wildcard IP                    0.0.0.0/32
 IETF Protocol Assignments      192.0.0.0/24
 TEST-NET-1                     192.0.2.0/24
 RESERVED                       192.88.99.0/24
