@@ -1,0 +1,14 @@
+graft tests
+graft src
+
+include *.rst
+include *.toml
+include .coveragerc
+include .flake8
+include .isort.cfg
+include LICENSE
+include tox.ini
+
+
+global-exclude __pycache__ *.py[cod]
+global-exclude .DS_Store *.swp
