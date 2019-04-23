@@ -9,6 +9,7 @@ fetched server side without potentially leaking internal documents/secrets.
 
 import ipaddress
 import socket
+import sys
 from socket import error as SocketError
 from socket import timeout as SocketTimeout
 
@@ -20,6 +21,8 @@ from urllib3.connectionpool import HTTPConnectionPool, HTTPSConnectionPool
 from urllib3.exceptions import ConnectTimeoutError, NewConnectionError
 from urllib3.poolmanager import PoolManager
 from urllib3.util import parse_url
+
+PY2 = sys.version_info[0] == 2
 
 UNSAFE_NETWORKS = [
     # IPv4 unsafe networks
@@ -90,7 +93,10 @@ def ip_is_safe(ip):
     networks.
     """
 
-    ip = ipaddress.ip_address(ip.decode())
+    if PY2:
+        ip = ip.decode()
+
+    ip = ipaddress.ip_address(ip)
 
     for network in UNSAFE_NETWORKS:
         if ip in network:
