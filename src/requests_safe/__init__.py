@@ -15,7 +15,7 @@ from socket import timeout as SocketTimeout
 from requests.adapters import HTTPAdapter
 from requests.exceptions import Timeout
 from requests.sessions import Session
-from urllib3.connection import HTTPConnection, VerifiedHTTPSConnection, _HTTPConnection
+from urllib3.connection import HTTPConnection, VerifiedHTTPSConnection
 from urllib3.connectionpool import HTTPConnectionPool, HTTPSConnectionPool
 from urllib3.exceptions import ConnectTimeoutError, NewConnectionError
 from urllib3.poolmanager import PoolManager
