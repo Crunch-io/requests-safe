@@ -121,7 +121,7 @@ def create_connection(
 
     host, port = address
 
-    if host.startswith("["):
+    if host.startswith("["):  # pragma: nocover
         host = host.strip("[]")
     err = None
 
