@@ -8,3 +8,4 @@ dist
 coverage.xml
 .coverage.*
 src/requests_safe.egg-info
+junit.xml
