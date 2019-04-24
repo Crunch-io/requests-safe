@@ -6,4 +6,5 @@ pip-wheel-metadata/
 build
 dist
 coverage.xml
+.coverage.*
 src/requests_safe.egg-info
