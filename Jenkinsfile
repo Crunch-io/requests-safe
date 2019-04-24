@@ -1,5 +1,7 @@
 // Work-around for Jenkins not killing/removing older queued jobs
-for (int i = 0; i < (BUILD_NUMBER as int); i++) {milestone()}
+def buildNumber = env.BUILD_NUMBER as int
+if (buildNumber > 1) milestone(buildNumber - 1)
+milestone(buildNumber)
 
 // What follows is the actual pipeline that we want Jenkins to go and build, along with all of the stages
 
