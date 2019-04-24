@@ -8,6 +8,26 @@ The primary use case is to safely be able to retrieve items from a user
 provided URL without potentially requesting internal or secret resources within
 ones own network.
 
+Usage
+~~~~~
+
+It's very simple to use this library, install it as part of your project and
+then the following code will protect all requests against accidentally
+retrieving something from an IP address in the ranges listed below!
+
+.. code:: python
+
+    import requests_safe
+    from requests import Session
+
+    with Session() as s:
+        requests_safe.apply(s)
+
+        s.get("https://google.com/")
+
+There is unfortunately no global way to apply this, so using ``requests.get()``
+and friends directly will not be protected by default.
+
 IPv4 unsafe networks
 ~~~~~~~~~~~~~~~~~~~~
 
