@@ -8,6 +8,8 @@ include .flake8
 include .isort.cfg
 include LICENSE
 include tox.ini
+exclude Jenkinsfile
+exclude Dockerfile.jenkins
 
 
 global-exclude __pycache__ *.py[cod]

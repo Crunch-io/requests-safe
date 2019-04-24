@@ -1,0 +1,12 @@
+ARG TAG=3.7
+FROM python:${TAG}
+
+USER root
+
+RUN python -mpip install tox
+
+# Add the user/group jenkins
+RUN groupadd --gid 991 jenkins \
+    && useradd --uid 997 --gid jenkins --shell /bin/bash --create-home -d /home/jenkins jenkins
+
+USER jenkins
