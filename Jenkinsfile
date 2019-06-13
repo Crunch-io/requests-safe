@@ -14,8 +14,8 @@ pipeline {
     agent none;
 
     stages {
-        // stage("Unit Testing") {
-            // parallel {
+        stage("Unit Testing") {
+            parallel {
                 stage("Python 3.7") {
                     agent {
                         dockerfile {
@@ -100,8 +100,8 @@ pipeline {
                         sh 'tox -e lint'
                     }
                 }
-            // }
-        //}
+            }
+        }
         stage("Coverage Reporting") {
             agent {
                 dockerfile {
