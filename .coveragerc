@@ -6,6 +6,7 @@ source =
 [paths]
 source =
     src/requests_safe
+    */src/requests_safe
     */site-packages/requests_safe
 
 [report]
