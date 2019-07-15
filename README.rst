@@ -69,7 +69,7 @@ IPv4 translated addresses            ::ffff:0:0:0/96
 IPv4/IPv6 translation                64:ff9b::/96
 Discard prefix                       100::/64
 Teredo tunneling                     2001::/32
-Orchid v2 (abondoned)                2001:20::/28
+Orchid v2 (abandoned)                2001:20::/28
 Documentation                        2001:db8::/32
 6to4 addressing scheme               2002::/16
 ULA address space                    fc00::/7
