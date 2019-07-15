@@ -71,7 +71,7 @@ UNSAFE_NETWORKS = [
     ipaddress.ip_network(u"100::/64"),
     # Teredo tunneling
     ipaddress.ip_network(u"2001::/32"),
-    # Orchid v2 (abondoned)
+    # Orchid v2 (abandoned)
     ipaddress.ip_network(u"2001:20::/28"),
     # Documentation
     ipaddress.ip_network(u"2001:db8::/32"),
